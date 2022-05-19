@@ -1,0 +1,16 @@
+.container {
+	border-bottom: 1px solid #3e3e49;
+	padding: 20px 0 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #292933;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.text {
+	color: #959dae;
+	font-size: 20px;
+	font-weight: 500;
+}

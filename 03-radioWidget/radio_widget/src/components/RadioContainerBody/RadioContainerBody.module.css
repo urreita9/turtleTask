@@ -1,0 +1,5 @@
+.container {
+	background-color: #22222b;
+	height: calc(100% - 100px);
+	border-radius: 0 0 20px 20px;
+}
