@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.radioLogo {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 100%;
+	border: 2px solid #9199ab;
+	width: 120px;
+	height: 120px;
+}
+
+.control {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}

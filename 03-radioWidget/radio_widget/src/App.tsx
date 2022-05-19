@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './App.css';
+import './App.module.css';
 import { RadioContainer } from './components/RadioContainer/RadioContainer';
 
 function App() {
