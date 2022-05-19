@@ -1,0 +1,19 @@
+.container {
+	height: 100px;
+	border-radius: 0 0 20px 20px;
+	background-color: #22222b;
+	padding: 20px;
+	border-top: 2px solid #959dae;
+}
+.textWrapper {
+	text-align: center;
+}
+.currentlyPlaying {
+	color: #e9ab5f;
+	font-weight: bold;
+}
+.text {
+	color: #959dae;
+	font-size: 20px;
+	font-weight: 500;
+}

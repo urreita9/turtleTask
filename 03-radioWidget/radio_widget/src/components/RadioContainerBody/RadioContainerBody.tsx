@@ -7,8 +7,8 @@ export const RadioContainerBody = () => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.stations}>
-				{allRadios.map(({ name, dial, id }) => (
-					<RadioStation key={dial} name={name} dial={dial} id={id} />
+				{allRadios.map(({ name, dial, id, img }) => (
+					<RadioStation key={dial} name={name} dial={dial} id={id} img={img} />
 				))}
 			</div>
 		</div>

@@ -1,6 +1,8 @@
 import styles from './RadioControls.module.css';
-
-export const RadioControls = () => {
+interface Props {
+	img: string;
+}
+export const RadioControls = ({ img }: Props) => {
 	return (
 		<div className={styles.container}>
 			<div
@@ -10,7 +12,7 @@ export const RadioControls = () => {
 			<div
 				className={styles.radioLogo}
 				style={{
-					backgroundImage: `url(https://avatars.githubusercontent.com/u/71611977?v=4)`,
+					backgroundImage: `url(${img})`,
 				}}
 			></div>
 			<div

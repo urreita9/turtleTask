@@ -9,6 +9,7 @@ export interface Radio {
 	name: string;
 	dial: number;
 	id: number;
+	img: string;
 }
 export interface AllRadios extends Array<Radio> {}
 

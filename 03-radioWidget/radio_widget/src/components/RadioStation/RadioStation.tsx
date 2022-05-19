@@ -1,16 +1,10 @@
 import { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/hooksRedux';
-import { cleanRadio, selectRadio } from '../../redux/actions/actions';
+import { cleanRadio, Radio, selectRadio } from '../../redux/actions/actions';
 import { RadioControls } from '../RadioControls/RadioControls';
 import styles from './RadioStation.module.css';
 
-interface Props {
-	name: string;
-	dial: number;
-	id: number;
-}
-
-export const RadioStation = ({ name, dial, id }: Props) => {
+export const RadioStation = ({ name, dial, id, img }: Radio) => {
 	const dispatch = useAppDispatch();
 	const radio = useAppSelector((state) => state.radio);
 
@@ -18,7 +12,7 @@ export const RadioStation = ({ name, dial, id }: Props) => {
 		<div
 			// style={{ backgroundColor: back ? 'red' : 'blue' }}
 			onClick={() => {
-				if (radio?.name === name) {
+				if (radio?.id === id) {
 					dispatch(cleanRadio());
 					return;
 				}
@@ -27,11 +21,12 @@ export const RadioStation = ({ name, dial, id }: Props) => {
 						name,
 						dial,
 						id,
+						img,
 					})
 				);
 			}}
 		>
-			{radio?.name === name && <RadioControls />}
+			{radio?.id === id && <RadioControls img={img} />}
 			<div className={styles.container}>
 				<div className={styles.text}>{name} FM </div>
 				<div className={styles.text}>{dial}</div>
