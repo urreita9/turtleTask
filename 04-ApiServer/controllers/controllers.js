@@ -3,6 +3,8 @@ const getRadios = async (req, res) => {
 };
 
 const createRadio = async (req, res) => {
+	const data = req.body;
+	console.log(data);
 	res.json({ msg: 'post radio' });
 };
 
