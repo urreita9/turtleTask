@@ -1,10 +1,18 @@
-const getRadios = async (req, res) => {};
+const getRadios = async (req, res) => {
+	res.json({ msg: 'get radios' });
+};
 
-const createRadio = async (req, res) => {};
+const createRadio = async (req, res) => {
+	res.json({ msg: 'post radio' });
+};
 
-const updateRadio = async (req, res) => {};
+const updateRadio = async (req, res) => {
+	res.json({ msg: 'put radio' });
+};
 
-const deleteRadio = async (req, res) => {};
+const deleteRadio = async (req, res) => {
+	res.json({ msg: 'delete radio' });
+};
 
 module.exports = {
 	getRadios,

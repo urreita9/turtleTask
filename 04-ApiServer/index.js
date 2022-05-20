@@ -13,6 +13,9 @@ app.use(cors());
 //Body Parse
 app.use(express.json());
 
+//JWT
+// console.log(jwt);
+
 //Routes
 app.use('/', require('./routes/radios'));
 
