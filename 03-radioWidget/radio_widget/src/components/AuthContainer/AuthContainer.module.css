@@ -16,3 +16,14 @@
 .btn:hover {
 	background-color: #e9ab5f;
 }
+
+.loggedIn {
+	font-size: 25px;
+	text-align: center;
+	color: #2ec750;
+}
+.loggedOut {
+	font-size: 25px;
+	text-align: center;
+	color: #b30b00;
+}

@@ -15,6 +15,8 @@ root.render(
 			domain='dev-efi5m3ft.us.auth0.com'
 			clientId='6UPUU5CtTNh8jtP1ZhLnOqIJpWUstdGd'
 			redirectUri={window.location.origin}
+			// audience='https://www.turtleChallenge.com'
+			// scope='openid profile email'
 		>
 			<Provider store={store}>
 				<App />
