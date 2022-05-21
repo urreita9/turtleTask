@@ -8,9 +8,15 @@ const createRadio = async (req, res) => {
 	const body = req.body;
 
 	try {
+		const alreadyExists = await Radio.findOne({ dial: body.dial });
+
+		if (alreadyExists)
+			return res
+				.status(400)
+				.json({ ok: false, msg: 'Radio dial already exists' });
+
 		const radio = await new Radio({ ...body });
 
-		console.log(radio);
 		await radio.save();
 
 		res.json({
