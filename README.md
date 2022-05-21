@@ -10,7 +10,10 @@ Meet the following points:
 - 01: LightSwitch
 - HTML / CSS / Javascript / DomElements
 <p align="left">
-  <img height="150"  src="./tablet_home.png" />
+  <img height="150"  src="./lightBulbOff.png" />
+</p>
+<p align="left">
+  <img height="150"  src="./lightBulbOn.png" />
 </p>
 
 
