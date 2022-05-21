@@ -1,4 +1,6 @@
+const radio = require('../models/radio');
 const Radio = require('../models/radio');
+const { options } = require('../routes/radioRoutes');
 
 const getRadios = async (req, res) => {
 	res.json({ msg: 'get radios' });
@@ -25,12 +27,24 @@ const createRadio = async (req, res) => {
 		});
 	} catch (error) {
 		console.log(error);
-		res.status(404).json({ ok: false, error });
+		res.status(400).json({ ok: false, error });
 	}
 };
 
 const updateRadio = async (req, res) => {
-	res.json({ msg: 'put radio' });
+	const body = req.body;
+	const { id } = req.params;
+
+	try {
+		const radio = await Radio.findByIdAndUpdate(id, { ...body }, { new: true });
+
+		if (!radio)
+			return res.status(400).json({ ok: false, msg: "Radio doesn't exist" });
+
+		res.json({ ok: true, radio });
+	} catch (error) {
+		res.status(400).json({ ok: false, error });
+	}
 };
 
 const deleteRadio = async (req, res) => {

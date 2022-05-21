@@ -17,7 +17,7 @@ app.use(express.json());
 // console.log(jwt);
 
 //Routes
-app.use('/', require('./routes/radios'));
+app.use('/', require('./routes/radioRoutes'));
 
 app.listen(process.env.PORT, () => {
 	console.log(`listening on port ${process.env.PORT}`);
