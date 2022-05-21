@@ -3,9 +3,15 @@ require('dotenv').config();
 const dbConnection = require('./database/config');
 const cors = require('cors');
 const app = express();
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerUI = require('swagger-ui-express');
 
 const radioRouter = require('./routes/radioRoutes');
+const { swaggerOptions } = require('./swagger/options');
 
+const specs = swaggerJsDoc(swaggerOptions);
+//SWAGGER
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(specs));
 //Database
 dbConnection();
 
@@ -15,12 +21,11 @@ app.use(cors());
 //Body Parse
 app.use(express.json());
 
-//JWT
-// console.log(jwt);
-
 //Routes
 app.use('/', radioRouter);
 
-app.listen(process.env.PORT, () => {
-	console.log(`listening on port ${process.env.PORT}`);
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+	console.log(`listening on port ${PORT}`);
 });

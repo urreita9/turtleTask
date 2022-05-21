@@ -34,10 +34,15 @@ const createRadio = async (req, res) => {
 
 		res.json({
 			ok: true,
-			radio,
+			radio: {
+				id: radio._id,
+				name: radio.name,
+				dial: radio.dial,
+				img: radio.img,
+			},
 		});
 	} catch (error) {
-		res.status(400).json({ ok: false, error });
+		res.status(500).json({ ok: false, error });
 	}
 };
 
@@ -51,7 +56,15 @@ const updateRadio = async (req, res) => {
 		if (!radio)
 			return res.status(400).json({ ok: false, msg: "Radio doesn't exist" });
 
-		res.json({ ok: true, radio });
+		res.json({
+			ok: true,
+			radio: {
+				id: radio._id,
+				name: radio.name,
+				dial: radio.dial,
+				img: radio.img,
+			},
+		});
 	} catch (error) {
 		res.status(400).json({ ok: false, error });
 	}
@@ -70,7 +83,15 @@ const deleteRadio = async (req, res) => {
 		if (!radio)
 			return res.status(400).json({ ok: false, msg: "Radio doesn't exist" });
 
-		res.json({ ok: true, radio });
+		res.json({
+			ok: true,
+			radio: {
+				id: radio._id,
+				name: radio.name,
+				dial: radio.dial,
+				img: radio.img,
+			},
+		});
 	} catch (error) {
 		res.status(400).json({ ok: false, error });
 	}
