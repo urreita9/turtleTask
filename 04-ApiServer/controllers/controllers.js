@@ -1,6 +1,4 @@
-const radio = require('../models/radio');
 const Radio = require('../models/radio');
-const { options } = require('../routes/radioRoutes');
 
 const getRadios = async (req, res) => {
 	try {
