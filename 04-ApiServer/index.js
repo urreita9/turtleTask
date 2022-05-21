@@ -4,6 +4,8 @@ const dbConnection = require('./database/config');
 const cors = require('cors');
 const app = express();
 
+const radioRouter = require('./routes/radioRoutes');
+
 //Database
 dbConnection();
 
@@ -17,7 +19,7 @@ app.use(express.json());
 // console.log(jwt);
 
 //Routes
-app.use('/', require('./routes/radioRoutes'));
+app.use('/', radioRouter);
 
 app.listen(process.env.PORT, () => {
 	console.log(`listening on port ${process.env.PORT}`);
