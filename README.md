@@ -7,7 +7,7 @@
 
 ## Objectives
 Meet the following points:
-- 01: LightSwitch
+## 01: LightSwitch
 - HTML / CSS / Javascript / DomElements
 ### Your task would be creating a web page containing a bulb. If I click on the bulb it should be switched on or off.
 <p align="left">
@@ -20,7 +20,7 @@ Meet the following points:
 After cloning the project, on 01-lightBulb folder, open index.html with Live Server.
 
 
-- 02: Fetch Api Response
+## 02: Fetch Api Response
 - BearerToken JSON
 ### Your task would be fetching api response from a specific api endpoint using any two programing language such as Javascript, PHP, Python, Golang, Java
 
@@ -31,7 +31,7 @@ After cloning the project, on 01-lightBulb folder, open index.html with Live Ser
 Answer on 02-fetchApiResponse. (Javascript/Python)
 
 
-- 03: Radio Widget
+## 03: Radio Widget
 - React / Redux / Css Modules / Typescript
 ### Application Requirements/Rules & Hints
 #### 1. Widget is mostly static - selecting station is the only action available. After selecting station, it should toggle it and display its name at the bottom of the widget.
@@ -51,7 +51,7 @@ Answer on 02-fetchApiResponse. (Javascript/Python)
   <img height="150"  src="./radioWidget.png" />
 </p>
 
-- 04: API Server
+## 04: API Server
 - Node / Express / MongoDb / oAuth2
 ### Your task would be creating an API server with Node.js, where users can maintain their radio stations.
 
@@ -83,7 +83,7 @@ Create an API Auth0 authentication app and set your own JWKSURI, AUDIENCE, ISSUE
  in the "Database Action Scripts" tab in the Auth0 dashboard.
   
   
-In order for this to work an auth0 token is required. 
+In order for this to work an auth0 token is required (except for the /get route).
 Login here: https://turtle-task.vercel.app/
 Copy token.
 Get to postman documentation. 
