@@ -96,33 +96,4 @@ In the Headers tab, type in a new header request:
 
 Api documentation (Postman) : https://documenter.getpostman.com/view/15184428/UyxoijAQ
 
-## Apartado de Operaciones
-<p align="left">
-  <img height="150"  src="./tablet_ops.png" />
-</p>
-Esta pantalla muesta la totalidad de las operaciones. Podemos agregar nuevas, editar y actualizar en la DB las que ya están cargadas, así como eliminarlas. No se puede editar el tipo de operación, ingreso o egreso (tal como pide la consigna).
-
-## Registro y Login 
-<p align="left">
-  <img height="150"  src="./mobile_register.png" />
-</p>
-El visitante que desee utilizar Alkemy Wallet deberá registrarse mediante Email y Password. El backend le devolvera un JWT que será utilizado para verificar la identidad del usuario en cada petición.
-
-## Diseño responsive con Next UI. 
-<p align="left">
-  <img height="150"  src="./tablet_delete.png" />
-</p>
-
-Deploy: Heroku y Vercel.
-
-Link:
-<a href="https://alkemy-fullstack.vercel.app/">https://alkemy-fullstack.vercel.app/</a>
-
-
-Para correrlo localmente:
-- clonar el repositorio
-- instalar las dependencias (npm install).
-- Crear base de datos postgreSQL y declarar variables de entorno: DB_USER, DB_PASSWORD, DB_HOST, DB_NAME.  
-- Desde la carpeta api/, ejecutar npm start para iniciar el servidor. 
-- Desde la carpeta client/, ejecutar npm start para darle inicio al browser. 
 
