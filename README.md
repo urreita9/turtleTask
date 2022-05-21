@@ -1,6 +1,6 @@
 # turtleTask
 <p align='left'>
-    <img src='[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV6PhkFAIQspPH6lKCTjfYEPgTeLE1R_eaOjV-VZzLGAir7s4ic-RPFH9PPeeUqo3887k&usqp=CAU](https://media-exp1.licdn.com/dms/image/C511BAQEmaxJnH-ZtAA/company-background_10000/0/1556527668231?e=1653768000&v=beta&t=l1YvlbN_dN9yX5BmbuiqHBf7ZBeYmk4P_FpFmoaOAik)' </img>
+    <img src='https://media-exp1.licdn.com/dms/image/C511BAQEmaxJnH-ZtAA/company-background_10000/0/1556527668231?e=1653768000&v=beta&t=l1YvlbN_dN9yX5BmbuiqHBf7ZBeYmk4P_FpFmoaOAik' </img>
 </p>
 
 # Challenge Fullstack - Alkemy
