@@ -68,7 +68,14 @@ Answer on 02-fetchApiResponse. (Javascript/Python)
 #### 4. Pay attention to code quality, formatting, conventions etc.
 
 <pre>
-In order for this to work an auth0 token is needed. 
+First you need to create a MongoDb database and a .env file.
+Set your enviorment variables:
+ 
+ MONGODB_CNN
+ USER
+ PASSWORD
+ 
+In order for this to work an auth0 token is required. 
 Login here: https://turtle-task.vercel.app/
 Copy token.
 Get to postman documentation. 
