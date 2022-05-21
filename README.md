@@ -9,6 +9,8 @@
 Meet the following points:
 - 01: LightSwitch
 - HTML / CSS / Javascript / DomElements
+- Your task would be creating a web page containing a bulb. If I click on the bulb it should be
+switched on or off.
 <p align="left">
   <img height="150"  src="./lightBulbOff.png" />
 </p>
