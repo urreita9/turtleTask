@@ -13,7 +13,7 @@ export const RadioContainerBody = () => {
 	const { getAccessTokenSilently } = useAuth0();
 	useEffect(() => {
 		dispatch(getRadios());
-		callApi();
+		// callApi();
 	}, []);
 
 	//Example for posting Radio
