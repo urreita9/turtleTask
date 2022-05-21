@@ -20,9 +20,9 @@ Meet the following points:
 After cloning the project, on 01-lightBulb folder, open index.html with Live Server.
 
 
-API desarrollada en node y express.
-Datos persistidos en postgreSQL. Sequelize ORM.
-Cliente desarrollado en React JS y redux como state managment. 
+- 02: Fetch Api Response
+- BearerToken JSON
+ <pre>hbuiiuhgi </pre>
 
 
 
