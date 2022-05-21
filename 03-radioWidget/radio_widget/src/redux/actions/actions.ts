@@ -1,8 +1,12 @@
+import axios from 'axios';
+import { AnyAction } from 'redux';
+import { ThunkAction } from 'redux-thunk';
 import { ActionType } from '../action-types/action-types';
+import { RootState } from '../store/store';
 
 export interface Action {
 	type: string;
-	payload: Radio | null;
+	payload: any;
 }
 
 export interface Radio {
@@ -22,3 +26,13 @@ export const cleanRadio = (): Action => ({
 	type: ActionType.CLEAN_RADIO,
 	payload: null,
 });
+
+export const getRadios =
+	(): ThunkAction<void, RootState, unknown, AnyAction> => async (dispatch) => {
+		const { data } = await axios.get('http://localhost:8080/api/radios');
+
+		dispatch({
+			type: ActionType.GET_RADIOS,
+			payload: data.radios,
+		});
+	};

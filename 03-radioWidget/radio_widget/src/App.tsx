@@ -6,10 +6,10 @@ import { AuthContainer } from './components/AuthContainer/AuthContainer';
 import { RadioContainer } from './components/RadioContainer/RadioContainer';
 
 function App() {
-	const { user } = useAuth0();
+	const { isAuthenticated } = useAuth0();
 	return (
 		<div className='App'>
-			{user && <RadioContainer />}
+			{isAuthenticated && <RadioContainer />}
 
 			<AuthContainer />
 		</div>

@@ -1,4 +1,5 @@
 export enum ActionType {
+	GET_RADIOS = 'GET_RADIOS',
 	SELECT_RADIO = 'SELECT_RADIO',
 	CLEAN_RADIO = 'CLEAN_RADIO',
 }

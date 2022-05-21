@@ -2,7 +2,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import styles from './AuthContainer.module.css';
 
 export const AuthContainer = () => {
-	const { loginWithPopup, logout, user } = useAuth0();
+	const { loginWithPopup, logout, user, isAuthenticated } = useAuth0();
 	return (
 		<>
 			<div className={styles.container}>
@@ -15,7 +15,7 @@ export const AuthContainer = () => {
 			</div>
 
 			<div>
-				{user ? (
+				{isAuthenticated ? (
 					<>
 						<h5 className={styles.loggedIn}>Logged in</h5>
 						<pre style={{ color: 'white' }}>
