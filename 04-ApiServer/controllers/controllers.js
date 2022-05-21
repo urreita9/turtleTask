@@ -1,11 +1,26 @@
+const Radio = require('../models/radio');
+
 const getRadios = async (req, res) => {
 	res.json({ msg: 'get radios' });
 };
 
 const createRadio = async (req, res) => {
-	const data = req.body;
-	console.log(data);
-	res.json({ msg: 'post radio' });
+	const body = req.body;
+
+	try {
+		const radio = await new Radio({ ...body });
+
+		console.log(radio);
+		await radio.save();
+
+		res.json({
+			ok: true,
+			radio,
+		});
+	} catch (error) {
+		console.log(error);
+		res.status(404).json({ ok: false, error });
+	}
 };
 
 const updateRadio = async (req, res) => {
