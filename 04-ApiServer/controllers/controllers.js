@@ -4,7 +4,14 @@ const getRadios = async (req, res) => {
 	try {
 		const radios = await Radio.find({ active: true });
 
-		res.json({ ok: true, radios });
+		const mappedRadiosId = radios.map((radio) => ({
+			name: radio.name,
+			id: radio._id,
+			dial: radio.dial,
+			img: radio.img,
+		}));
+
+		res.json({ ok: true, radios: mappedRadiosId });
 	} catch (error) {
 		res.status(400).json({ ok: false, error });
 	}
