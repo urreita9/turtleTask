@@ -3,7 +3,13 @@ const Radio = require('../models/radio');
 const { options } = require('../routes/radioRoutes');
 
 const getRadios = async (req, res) => {
-	res.json({ msg: 'get radios' });
+	try {
+		const radios = await Radio.find({ active: true });
+
+		res.json({ ok: true, radios });
+	} catch (error) {
+		res.status(400).json({ ok: false, error });
+	}
 };
 
 const createRadio = async (req, res) => {
@@ -26,7 +32,6 @@ const createRadio = async (req, res) => {
 			radio,
 		});
 	} catch (error) {
-		console.log(error);
 		res.status(400).json({ ok: false, error });
 	}
 };
