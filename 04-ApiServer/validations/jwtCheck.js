@@ -6,10 +6,12 @@ const jwtCheck = expressjwt({
 		cache: true,
 		rateLimit: true,
 		jwksRequestsPerMinute: 5,
-		jwksUri: process.env.JWKSURI,
+		jwksUri:
+			process.env.JWKSURI ||
+			'https://dev-efi5m3ft.us.auth0.com/.well-known/jwks.json',
 	}),
-	audience: process.env.AUDIENCE,
-	issuer: process.env.ISSUER,
+	audience: process.env.AUDIENCE || 'https://www.turtleChallenge.com',
+	issuer: process.env.ISSUER || 'https://dev-efi5m3ft.us.auth0.com/',
 	algorithms: ['RS256'],
 });
 
