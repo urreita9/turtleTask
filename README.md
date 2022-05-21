@@ -47,6 +47,7 @@ Answer on 02-fetchApiResponse. (Javascript/Python)
 #### 6. Transition/motion smoothness would be appreciated (not required).
 #### 7. Pay attention to code quality, formatting, conventions etc.
 
+### VERCEL FRONTEND DEPLOY: https://turtle-task.vercel.app/
 <p align="left">
   <img height="150"  src="./radioWidget.png" />
 </p>
