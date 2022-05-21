@@ -10,10 +10,11 @@ interface updateBody {
 	dial?: number;
 	img?: string;
 }
+const url = 'https://turtlechallenge.herokuapp.com';
 
 export const postRadio = async (token: string, body: postBody) => {
 	try {
-		const { data } = await axios.post('http://localhost:8080/api/radio', body, {
+		const { data } = await axios.post(`${url}/api/radio`, body, {
 			headers: { authorization: `Bearer ${token}` },
 		});
 		return data;
@@ -29,7 +30,7 @@ export const updateRadio = async (
 ) => {
 	try {
 		const { data } = await axios.put(
-			`http://localhost:8080/api/radio/${id}`,
+			`${url}api/radio/${id}`,
 			{ ...body },
 			{
 				headers: { authorization: `Bearer ${token}` },
@@ -44,7 +45,7 @@ export const updateRadio = async (
 export const deleteRadio = async (token: string, id: string) => {
 	try {
 		const { data } = await axios.delete(
-			`http://localhost:8080/api/radio/${id}`,
+			`${url}/api/radio/${id}`,
 
 			{
 				headers: { authorization: `Bearer ${token}` },

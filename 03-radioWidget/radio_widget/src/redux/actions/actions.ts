@@ -29,7 +29,9 @@ export const cleanRadio = (): Action => ({
 
 export const getRadios =
 	(): ThunkAction<void, RootState, unknown, AnyAction> => async (dispatch) => {
-		const { data } = await axios.get('http://localhost:8080/api/radios');
+		const { data } = await axios.get(
+			'https://turtlechallenge.herokuapp.com/api/radios'
+		);
 
 		dispatch({
 			type: ActionType.GET_RADIOS,
