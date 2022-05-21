@@ -68,13 +68,21 @@ Answer on 02-fetchApiResponse. (Javascript/Python)
 #### 4. Pay attention to code quality, formatting, conventions etc.
 
 <pre>
-First you need to create a MongoDb database and a .env file.
-Set your enviorment variables:
+First you need to create a MongoDb cluster.
+Then create a .env file.
+  Set your enviorment variables:
  
- MONGODB_CNN
- USER
- PASSWORD
- 
+   MONGODB_CNN
+   USER
+   PASSWORD
+
+Create an API Auth0 authentication app and set your own JWKSURI, AUDIENCE, ISSUER in .env and connect to your Mongo DB database using:
+
+  const client = new MongoClient(`mongodb+srv://${configuration.USER}:${configuration.PASSWORD}@<dBname>.vw9e1.mongodb.net/?retryWrites=true&w=majority`);
+  
+ in the "Database Action Scripts" tab in the Auth0 dashboard.
+  
+  
 In order for this to work an auth0 token is required. 
 Login here: https://turtle-task.vercel.app/
 Copy token.
