@@ -50,7 +50,35 @@ Answer on 02-fetchApiResponse. (Javascript/Python)
 <p align="left">
   <img height="150"  src="./radioWidget.png" />
 </p>
-Esta pantalla muesta las ultimas 10 operaciones cargadas por el usuario, junto con el balance TOTAL (incluyendo las demas operaciones, llegado el caso en que sean mas de 10) y un gráfico que muestra las porciones de ingresos y egresos totales de dinero.
+
+- 04: API Server
+- Node / Express / MongoDb / oAuth2
+### Your task would be creating an API server with Node.js, where users can maintain their radio stations.
+
+### Application Requirements/Rules & Hints
+#### 1. Signup & Sign In.
+#### 2. API to fetch, create, update and delete stations
+
+
+### Additional requirements & Hints:
+
+#### 1. MongoDB Database.
+#### 2. Authentication (oAuth2 would be appreciable)
+#### 3. API Docs 
+#### 4. Pay attention to code quality, formatting, conventions etc.
+
+<pre>
+In order for this to work an auth0 token is needed. 
+Login here: https://turtle-task.vercel.app/
+Copy token.
+Get to postman documentation. 
+In the Headers tab, type in a new header request: 
+    key: authorization 
+    value: Bearer {yourToken}
+</pre>
+
+
+Api documentation (Postman) : https://documenter.getpostman.com/view/15184428/UyxoijAQ
 
 ## Apartado de Operaciones
 <p align="left">
