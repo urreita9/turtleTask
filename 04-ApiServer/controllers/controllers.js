@@ -48,7 +48,22 @@ const updateRadio = async (req, res) => {
 };
 
 const deleteRadio = async (req, res) => {
-	res.json({ msg: 'delete radio' });
+	const { id } = req.params;
+
+	try {
+		const radio = await Radio.findByIdAndUpdate(
+			id,
+			{ active: false },
+			{ new: true }
+		);
+
+		if (!radio)
+			return res.status(400).json({ ok: false, msg: "Radio doesn't exist" });
+
+		res.json({ ok: true, radio });
+	} catch (error) {
+		res.status(400).json({ ok: false, error });
+	}
 };
 
 module.exports = {
