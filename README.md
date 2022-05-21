@@ -3,14 +3,15 @@
     <img src='https://media-exp1.licdn.com/dms/image/C511BAQEmaxJnH-ZtAA/company-background_10000/0/1556527668231?e=1653768000&v=beta&t=l1YvlbN_dN9yX5BmbuiqHBf7ZBeYmk4P_FpFmoaOAik' </img>
 </p>
 
-# Challenge Fullstack - Alkemy
+# Challenge Fullstack - Turtle Venture
 
-## Objetivo
-Desarrollar una aplicación para administración de presupuesto personal. La misma debe
-permitir: 
-- crear / editar ingresos y egresos de dinero, 
-- mostrar un balance resultante de las
-operaciones registradas.
+## Objectives
+Meet the following points:
+- 01: LightSwitch
+- HTML / CSS / Javascript / DomElements
+<p align="left">
+  <img height="150"  src="./tablet_home.png" />
+</p>
 
 
 
