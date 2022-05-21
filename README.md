@@ -23,57 +23,12 @@ After cloning the project, on 01-lightBulb folder, open index.html with Live Ser
 - 02: Fetch Api Response
 - BearerToken JSON
 ### Your task would be fetching api response from a specific api endpoint using any two programing language such as Javascript, PHP, Python, Golang, Java
-- Javascript
- <pre>const URL = 'https://gorest.co.in/public/v1/users';
-const TOKEN =
-	'd7c01847de4c083cb154e9a533294301e9f05f93dbae7d589e42ece63226c0a3';
 
-const list = document.getElementById('list');
+#### Credentials: 
+##### 1. Endpoint: https://gorest.co.in/public/v1/users
+##### 2. Token: d7c01847de4c083cb154e9a533294301e9f05f93dbae7d589e42ece63226c0a3
 
-const getData = async (url) => {
-	const res = await fetch(url, {
-		headers: {
-			'Content-Type': 'application/json',
-			Authorization: `Bearer ${TOKEN}`,
-		},
-	});
-	const data = await res.json();
-
-	//Just to show some data
-	data.data.forEach((user) => {
-		const li = `<li>${user.name}</li>`;
-		list.innerHTML += li;
-	});
-
-	//return response from api
-	return data;
-};
-
-getData(URL) </pre>
-
--Python
-
-<pre>
-import requests
-from requests.structures import CaseInsensitiveDict
-
-URL = 'https://gorest.co.in/public/v1/users';
-TOKEN ='d7c01847de4c083cb154e9a533294301e9f05f93dbae7d589e42ece63226c0a3';
-
-headers = CaseInsensitiveDict()
-headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer {TOKEN}"
-
-
-# response from api
-response = requests.get(URL, headers=headers)
-
-data = response.json()
-
-print(data)
-</pre>
-
-
+Answer on 02-fetchApiResponse. (Javascript/Python)
 
 La aplicación cuenta con autenticación de usuarios y verificación JWT.  
 
