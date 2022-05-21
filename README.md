@@ -30,11 +30,25 @@ After cloning the project, on 01-lightBulb folder, open index.html with Live Ser
 
 Answer on 02-fetchApiResponse. (Javascript/Python)
 
-La aplicación cuenta con autenticación de usuarios y verificación JWT.  
 
-## Home
+- 03: Radio Widget
+- React / Redux / Css Modules / Typescript
+### Application Requirements/Rules & Hints
+#### 1. Widget is mostly static - selecting station is the only action available. After selecting station, it should toggle it and display its name at the bottom of the widget.
+#### 2. Rest of the buttons should be clickable but it should trigger no action.
+
+### Additional requirements & Hints:
+
+#### 1. React.
+#### 2. TypeScript or Proptypes (TypeScript would be much more appreciable).
+#### 3. CSS Modules (https://github.com/css-modules/css-modules).
+#### 4. Even though the radio station list is predefined - the application should be ready to accept the stations from the backend service.
+#### 5. Redux Toolkit or Redux could be used (not required).
+#### 6. Transition/motion smoothness would be appreciated (not required).
+#### 7. Pay attention to code quality, formatting, conventions etc.
+
 <p align="left">
-  <img height="150"  src="./tablet_home.png" />
+  <img height="150"  src="./radioWidget.png" />
 </p>
 Esta pantalla muesta las ultimas 10 operaciones cargadas por el usuario, junto con el balance TOTAL (incluyendo las demas operaciones, llegado el caso en que sean mas de 10) y un gráfico que muestra las porciones de ingresos y egresos totales de dinero.
 
