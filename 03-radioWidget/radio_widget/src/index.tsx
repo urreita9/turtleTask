@@ -14,7 +14,7 @@ root.render(
 		<Auth0Provider
 			domain='dev-efi5m3ft.us.auth0.com'
 			clientId='6UPUU5CtTNh8jtP1ZhLnOqIJpWUstdGd'
-			redirectUri={window.location.origin}
+			redirectUri='https://turtle-task.vercel.app/'
 			audience='https://www.turtleChallenge.com'
 			scope='openid profile email'
 		>
